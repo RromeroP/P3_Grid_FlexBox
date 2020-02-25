@@ -1,0 +1,283 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #e8e1d1;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7c6b4f;
+    font-size: 14px;
+}
+
+.grid-container {
+    background: url(../images/bg-body.jpg) repeat-x center top;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 14% 24% 24% 24% 14%;
+    grid-template-rows: auto auto auto auto 105px;
+    row-gap: 10px;
+}
+
+/******************** LOGO ********************/
+
+.Logo {
+    grid-area: 1 / 1 / 2 / 6;
+    text-align: center;
+}
+
+.Logo a img {
+    margin-top: 30px;
+    height: 70%;
+}
+
+/******************** NAVBAR ********************/
+
+.Navbar {
+    grid-area: 2 / 1 / 3 / 6;
+    display: flex;
+    justify-content: center;
+}
+
+.Navbar div a {
+    color: #164773;
+    background-color: #FAF4E8;
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.Navbar div a span {
+    cursor: pointer;
+    display: block;
+    padding: 0 15px;
+}
+
+.Navbar div.current a, .Navbar div a:hover {
+    color: white;
+    background-color: #1E3347;
+}
+
+/******************** CARDS1 ********************/
+
+.Cards1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-area: 3 / 2 / 4 / 5;
+    background: #f6efe5;
+    border: 1px solid #e0dacc;
+    justify-items: center;
+}
+
+.Cards1 h1 {
+    font-family: Times New Roman, Times, serif;
+    font-size: 28px;
+    line-height: 28px;
+    margin: 0;
+    padding: 28px 0;
+}
+
+.Cards1 h1 a {
+    color: #0d4d79;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px #f8ffff;
+}
+
+.Cards1 h1 a:hover {
+    color: #1c3345;
+}
+
+.Cards1 div {
+    text-align: center;
+}
+
+.Cards1 img {
+    width: 80%;
+}
+
+.Cards1 span {
+    margin: 10px 0;
+    color: #3e3524;
+    font-size: 16px;
+    font-family: Times New Roman, Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Cards1 p {
+    line-height: 23px;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    flex-grow: 1;
+    margin-bottom: 50px;
+}
+
+.Cards1 p a {
+    color: #7c6b4f;
+}
+
+.Cards1 p a:hover {
+    color: #3e3524;
+}
+
+.Cards1 span, .Cards1 p, .Cards1 h1 {
+    width: 85%;
+}
+
+.readmore {
+    height: 20px;
+    width: 100px;
+    padding-top: 5px;
+    background-color: #ECE3D4;
+    color: #69614a;
+    text-decoration: none;
+    text-align: center;
+    border: inset 1px #e7e4d9;
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.12);
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+
+.readmore:hover {
+    border: outset 1px #e7e4d9;
+}
+
+.Cards1_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Cards1_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.Cards1_3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+/******************** CARDS2 ********************/
+
+.Cards2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-area: 4 / 2 / 5 / 5;
+}
+
+.Cards2 p, .Cards2 b, .Cards2 span {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 13px;
+}
+
+.Cards2 h3 {
+    align-self: flex-start;
+    color: #0D4D79;
+    font-family: Times New Roman, Times, serif;
+    font-size: 20px;
+    margin: 0 0 5px;
+    text-indent: 15px;
+    text-shadow: 0 1px #F8FFFF;
+}
+
+.Cards2 div div {
+    height: 100%;
+    width: 90%;
+    background: #f6efe5;
+    border: 1px solid #e0dacc;
+    justify-items: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.viewall {
+    align-self: flex-end;
+    color: #7c6b4f;
+}
+
+.viewall:hover {
+    color: #3e3524;
+}
+
+.Cards2 img {
+    max-width: 100%;
+}
+
+.Cards2_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Cards2_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.Cards2_3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.Cards2_4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+/******************** FOOTER ********************/
+
+.Footer {
+    background: url(../images/bg-footer.jpg) repeat-x center bottom;
+    grid-area: 5 / 1 / 6 / 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Footer p {
+    font-family: Times New Roman, Times, serif;
+}
+
+.Footer p a {
+    color: #988878;
+    text-decoration: none;
+}
+
+.Footer p a:hover {
+    color: #988878;
+    text-decoration: underline;
+}
+
+.Footer p.connect {
+    color: #988878;
+}
+
+.Footer p.footnote {
+    color: #988878;
+}
